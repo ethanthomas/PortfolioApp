@@ -32,17 +32,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.spotifyStreamerButton:
-                Toast.makeText(v.getContext(), "")
+                Toast.makeText(v.getContext(), "This is my streamer app", Toast.LENGTH_LONG).show();
                 break;
             case R.id.scoresAppButton:
+                Toast.makeText(v.getContext(), "This is my scores app", Toast.LENGTH_LONG).show();
                 break;
             case R.id.libraryAppButton:
+                Toast.makeText(v.getContext(), "This is my library app", Toast.LENGTH_LONG).show();
                 break;
             case R.id.buildItBiggerButton:
+                Toast.makeText(v.getContext(), "This is my build it bigger app", Toast.LENGTH_LONG).show();
                 break;
             case R.id.xyzReaderButton:
+                Toast.makeText(v.getContext(), "This is my xyz app", Toast.LENGTH_LONG).show();
                 break;
             case R.id.capstoneProjectButton:
+                Toast.makeText(v.getContext(), "This is my capstone app", Toast.LENGTH_LONG).show();
                 break;
         }
     }
