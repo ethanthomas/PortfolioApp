@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#4e0085ff"
+    android:background="#FFF"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -25,19 +25,19 @@
             android:fontFamily="sans-serif-thin"/>
 
         <Button
-            android:id="@+id/spotifyStreamerButton"
+            android:id="@+id/movieButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:background="#F08C35"
-            android:text="Spotify Streamer" />
+            android:background="#FFF"
+            android:text="Popular Movies" />
 
         <Button
             android:id="@+id/scoresAppButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:background="#F08C35"
+            android:background="#FFF"
             android:text="Scores App" />
 
         <Button
@@ -45,7 +45,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:background="#F08C35"
+            android:background="#FFF"
             android:text="Library App" />
 
         <Button
@@ -53,7 +53,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:background="#F08C35"
+            android:background="#FFF"
             android:text="Build It Bigger" />
 
         <Button
@@ -61,7 +61,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:background="#F08C35"
+            android:background="#FFF"
             android:text="XYZ Reader" />
 
         <Button
@@ -69,9 +69,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:background="#8c0407"
+            android:background="#4d4d4d"
             android:text="Capstone"
-            android:textColor="#FFFFFF" />
+            android:textColor="#FFF"/>
     </LinearLayout>
 
 </RelativeLayout>

@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    Button spotify, scores, library, build, xyz, capstone;
+    Button movie, scores, library, build, xyz, capstone;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,34 +20,41 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     public void initializeViews() {
-        spotify = (Button) findViewById(R.id.spotifyStreamerButton);
+        movie = (Button) findViewById(R.id.movieButton);
         scores = (Button) findViewById(R.id.scoresAppButton);
         library = (Button) findViewById(R.id.libraryAppButton);
         build = (Button) findViewById(R.id.buildItBiggerButton);
         xyz = (Button) findViewById(R.id.xyzReaderButton);
         capstone = (Button) findViewById(R.id.capstoneProjectButton);
+
+        movie.setOnClickListener(this);
+        scores.setOnClickListener(this);
+        library.setOnClickListener(this);
+        build.setOnClickListener(this);
+        xyz.setOnClickListener(this);
+        capstone.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.spotifyStreamerButton:
-                Toast.makeText(v.getContext(), "This is my streamer app", Toast.LENGTH_LONG).show();
+            case R.id.movieButton:
+                Toast.makeText(v.getContext(), "This is my movie app", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.scoresAppButton:
-                Toast.makeText(v.getContext(), "This is my scores app", Toast.LENGTH_LONG).show();
+                Toast.makeText(v.getContext(), "This is my scores app", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.libraryAppButton:
-                Toast.makeText(v.getContext(), "This is my library app", Toast.LENGTH_LONG).show();
+                Toast.makeText(v.getContext(), "This is my library app", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.buildItBiggerButton:
-                Toast.makeText(v.getContext(), "This is my build it bigger app", Toast.LENGTH_LONG).show();
+                Toast.makeText(v.getContext(), "This is my build it bigger app", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.xyzReaderButton:
-                Toast.makeText(v.getContext(), "This is my xyz app", Toast.LENGTH_LONG).show();
+                Toast.makeText(v.getContext(), "This is my xyz app", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.capstoneProjectButton:
-                Toast.makeText(v.getContext(), "This is my capstone app", Toast.LENGTH_LONG).show();
+                Toast.makeText(v.getContext(), "This is my capstone app", Toast.LENGTH_SHORT).show();
                 break;
         }
     }
